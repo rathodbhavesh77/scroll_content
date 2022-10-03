@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .cont {
+            border: 1px solid black;
+            overflow: scroll;
+            margin-left: 20px;
+            height: 100px;
+            width: 300px;
+        }
+        /* .p:hover {
+            background-color: rgb(8, 117, 8);
+        } */
+        
+        .text {
+            background: scroll green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello world :):)</h1>
+    <div class="cont">
+        <p class="text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quis aliquid nam rem inventore commodi aspernatur doloribus at excepturi cupiditate animi officia quod, voluptas similique rerum aut asperiores error quidem?Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Velit eum quibusdam voluptatibus molestiae esse cum omnis ipsum iste iure! Accusamus sequi voluptatem iusto necessitatibus omnis quasi! Natus perspiciatis ducimus labore?Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Nulla delectus beatae, ab sint illo dignissimos adipisci aliquam eos minima quo omnis suscipit recusandae excepturi necessitatibus ad commodi ipsam est ducimus!
+        </p>
+    </div>
+    <script>
+        var text = document.getElementsByTagName("body")[0];
+        let divcontainer = document.querySelector(".cont");
+        divcontainer.addEventListener("scroll", function() {
+            document.querySelector(".text").style.color = "red";
+        });
+    </script>
+</body>
+
+</html>
